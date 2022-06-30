@@ -1,5 +1,5 @@
 CFLAGS =
-OBJ = firmware.rel libefm8bb51.rel libc.rel
+OBJ = firmware.rel
 
 all: firmware.ihx
 
