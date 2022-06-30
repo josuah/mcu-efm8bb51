@@ -1,15 +1,13 @@
 #include "libc.h"
 #include "libefm8bb51.h"
 
-void __reset_handler() {
-	main();
-}
+void __reset_handler() { }
 
-char *__bss_end = (char *)0x;
-char *__bss_start = (char *)0x;
-char *__data_end = (char *)0x;
-char *__data_load_start = (char *)0x;
-char *__data_start = (char *)0x;
+char *__bss_end = (char *)0x00;
+char *__bss_start = (char *)0x00;
+char *__data_end = (char *)0x00;
+char *__data_load_start = (char *)0x00;
+char *__data_start = (char *)0x00;
 
 void __gptr_cmp(void) { __reset_handler(); }
 void _gptrget(void) { __reset_handler(); }
