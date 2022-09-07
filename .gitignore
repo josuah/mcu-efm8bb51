@@ -1,7 +1,12 @@
-*.ihx
-*.lst
-*.rel
 *.asm
-*.map
+*.cdb
 *.elf
+*.ihx
+*.lk
+*.lst
+*.map
+*.mem
+*.omf
+*.rel
+*.rst
 *.sym
