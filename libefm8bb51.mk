@@ -4,7 +4,7 @@ CC = sdcc -mmcs51 \
 	--data-loc 0x30 \
 	--idata-loc 0x80
 EFM8LOAD = python3 efm8load.py
-TTY = /dev/ttyU
+TTY = /dev/ttyUSB0
 
 flash: firmware.ihx
 	${EFM8LOAD} -p ${TTY} -w firmware.ihx
